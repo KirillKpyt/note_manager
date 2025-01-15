@@ -6,10 +6,10 @@ created_date = input("Введите дату создания заметки в
 issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
 
 
-title1 = input("Введите первый заголовок заметки: ")
+title = input("Введите первый заголовок заметки: ")
 title2 = input("Введите второй заголовок заметки: ")
 title3 = input("Введите третий заголовок заметки: ")
-titles = [title1, title2, title3]
+titles = [title, title2, title3]
 
 
 print("Вы ввели следующие данные:")
@@ -17,5 +17,5 @@ print("Имя пользователя:", username)
 print("Заголовки заметки:", titles)
 print("Описание заметки:", content)
 print("Статус заметки:", status)
-print("Дата создания заметки:", created_date)
-print("Дата истечения заметки:", issue_date)
+print("Дата создания заметки:", created_date[0:5])
+print("Дата истечения заметки:", issue_date[0:5])

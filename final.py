@@ -13,6 +13,10 @@ for i in range(3):
     note["titles"].append(title)
 
 
-print("\nСобранная информация о заметке:")
-for key, value in note.items():
-    print(f"{key.capitalize()}: {value}")
+print("Собранная информация о заметке:")
+print("Имя пользователя:", note["username"])
+print("Заголовки заметки:", note["titles"])
+print("Описание заметки:", note["content"])
+print("Статус заметки:", note["status"])
+print("Дата создания заметки:", note["created_date"][0:5])
+print("Дата истечения заметки:", note["issue_date"][0:5])
