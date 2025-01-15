@@ -16,8 +16,8 @@ note = [
     username,
     content,
     status,
-    created_date,
-    issue_date,
+    created_date[0:5],
+    issue_date[0:5],
     titles
 ]
 
