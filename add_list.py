@@ -7,7 +7,7 @@ issue_date = input("Введите дату истечения заметки в
 
 titles = []
 for i in range(3):
-    title = input("Введите заголовок заметки {i + 1}: ")
+    title = input(f"Введите заголовок заметки {i + 1}: ")
     titles.append(title)
 
 
