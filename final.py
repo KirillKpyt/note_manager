@@ -13,13 +13,14 @@ for i in range(3):
     titles.append(title)
 
 note = [
-    username,
-    content,
-    status,
-    created_date[0:5],
-    issue_date[0:5],
-    titles
-]
+"Вы ввели следующие данные: "
+"Имя пользователя:", username,
+"Заголовки заметки:", titles,
+"Описание заметки:", content,
+"Статус заметки:", status,
+"Дата создания заметки:", created_date[0:5],
+"Дата истечения заметки:", issue_date[0:5]
+    ]
 
 print(note)
 
