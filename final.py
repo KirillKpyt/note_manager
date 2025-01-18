@@ -7,20 +7,19 @@ created_date = input("Введите дату создания заметки в
 issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
 
 
-titles = []
-for i in range(3):
-    title = input(f"Введите заголовок заметки {i + 1}: ")
-    titles.append(title)
+title = input("Введите первый заголовок заметки: ")
+title2 = input("Введите второй заголовок заметки: ")
+title3 = input("Введите третий заголовок заметки: ")
+titles = [title, title2, title3]
 
 note = [
-"Вы ввели следующие данные: "
-"Имя пользователя:", username,
-"Заголовки заметки:", titles,
-"Описание заметки:", content,
-"Статус заметки:", status,
-"Дата создания заметки:", created_date[0:5],
-"Дата истечения заметки:", issue_date[0:5]
+    username,
+    titles,
+    content,
+    status,
+    created_date[0:5],
+    issue_date[0:5]
     ]
-
 print(note)
+
 
